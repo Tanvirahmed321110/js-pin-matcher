@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Matcher</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wraper">
+        
+        <div id="pin-matcher">
+            <div class="pin-matcher-container container">
+                <div class="pin-mathcer-genarate pin-item">
+                    <input id="input-genarate" class="container" type="text">
+                    <button onclick="GenaratePin()" id="btn-genarate-pin">Genarate Pin</button>
+                </div> <!-- .// pin-matcher-genarate-->
+                
+                <div  class="pin-matcher-submite pin-item">
+                    <input id="input-submite" type="text">
+                    <div id="digit-container" class="number">
+                        <div class="number-row">
+                            <button>7</button>
+                            <button>8</button>
+                            <button>9</button>
+                        </div>
+                        <div class="number-row">
+                            <button>4</button>
+                            <button>5</button>
+                            <button>6</button>
+                        </div>
+                        <div class="number-row">
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                        </div>
+                        <div class="number-row">
+                            <button>&lt;</button>
+                            <button>0</button>
+                            <button>C</button>
+                        </div>
+                        <div class="number-row">
+                            <button id="btn-submite">Submite</button>
+                        </div>
+                        <div class="number-row">
+                            <h4>3 try left</h4>
+                        </div>
+                    </div>
+                </div> <!-- .// pin-matcher-submite-->
+            </div> <!-- .// pin-container- -->
+            
+            <!-- show data -->
+            <div class="notify-main">
+                <p id="not-match-text" class="notify-item">❌ Opos! Pin Didn't Match, Please try again </p>
+                <p id="match-text" class="notify-item">✅ Pin Matched... Secret door is opening for you</p>
+            </div>
+        </div>
+    </div>
+        
+        
+    <script src="app.js"></script>
+</body>
+</html>

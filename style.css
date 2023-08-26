@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #10101b;
+}
+.container{
+    width: 82%;
+    margin: 0 auto;
+}
+
+
+
+.pin-matcher-container {
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 4%;
+}
+.pin-item{
+    background-color: #222436;
+    padding: 30px 0;
+    width: 100%;
+    height: 564px;
+    text-align: center;
+}
+.pin-item input {
+    height: 47px;
+    width: 72% !important;
+    display: block;
+    margin: 0 auto;
+    background-color:#3D4153;
+    outline: none;
+    border: #858299 2px solid;
+    color: white;
+    font-size: 22px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    padding:0px 15px;
+    margin-bottom:30px;
+}
+.pin-item input:focus{
+    border: 2px solid white;
+    transition: 1s;
+}
+#btn-genarate-pin{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    line-height: 35px;
+    padding: 0 25px;
+    margin:22% auto;
+    border: 7px solid #39458C;
+    background-color: #495BC3;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+#btn-genarate-pin:focus{
+    background-color: #10101b;
+    transition: .8s;
+    border: 7px rgb(182, 178, 178) solid;
+}
+
+
+/* number */
+.number{
+    width: 100%;
+}
+.number button {
+    width: 95px;
+    height: 77px;
+    background-color: #3D4153;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 28px;
+}
+.number-row{
+    width: 100%;
+    margin: 7px 3px;
+}
+#btn-submite{
+    width:60%;
+    background-color: #495BC3;
+    margin: 18px  auto 10px auto;
+    height: 46px;
+    font-size:18px;
+    letter-spacing:.6px;
+    border: none;
+}
+#btn-submite:focus{
+    border:1.5px rgb(201, 197, 197) solid ;
+    outline:2PX black; 
+    transition: .5s;
+    background-color: #10101b;
+}
+.number-row h4{
+    color: #ff3c5f;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: .8px;
+}
+
+
+
+/* notify section */
+.notify-main{
+    width:40%;
+    margin:-5px auto;
+    text-align: center;
+}
+.notify-item{
+    background-color: #222436;
+    margin: 5px  0;
+    padding: 10px 0;
+    border-radius: 20px;
+    color: whitesmoke;
+    letter-spacing: .8px;
+    font-weight: 500;
+    font-size: 18px;
+    display:none;
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    body{background-color: rgb(54, 43, 43);}
+    .pin-matcher-container{
+      grid-template-columns: 100%;
+    }
+    .notify-main{
+        margin-top: 30px;
+    }
+}
